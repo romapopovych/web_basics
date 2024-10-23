@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab4</title>
+</head>
+<body>
+  <h1>Моя перша HTML-форма</h1>
+  <form name="myForm" action="https://httpbin.org/post" method="post">
+    <fieldset>
+      <legend>Введіть данні про себе</legend>
+      <label>Ім'я:<input type="text" name="name"></label><br>
+      <br>
+      <label>Дата народження:<input type="date" name="birthday_date"></label><br>
+      <br>
+      <label>Gmail:<input type="email" name="gmail"></label><br>
+      <br>
+      <label>Повідомлення:<textarea name="comment"></textarea></label><br>
+      <br>
+    </fieldset>
+    <fieldset>
+      <legend>Ваші улюблені напої?</legend>
+      <label><input type="checkbox" name="drink" value="coffee"> Кава</label><br>
+      <label><input type="checkbox" name="drink" value="tea"> Чай</label><br>
+      <label><input type="checkbox" name="drink" value="juice"> Кола</label><br>
+      <label><input type="checkbox" name="drink" value="water"> Спрайт</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>Моя національність</legend>
+      <label><input type="radio" name="nationality" value="ukrainian"> Українець</label><br>
+      <label><input type="radio" name="nationality" value="german"> Словак</label><br>
+      <label><input type="radio" name="nationality" value="polish"> Поляк</label><br>
+    </fieldset>
+    <br>
+      <button type="submit" class="sumbitform">Відправити</button>
+      <button type="reset" class="resetform">Очистити</button>
+</body>
+</html>
