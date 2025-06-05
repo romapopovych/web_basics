@@ -165,7 +165,8 @@
 @media (max-width: 767px) {
 	.address {
 			 width: 100%; 
-			 margin: 0 0 20px 0; 
+			 margin: 0, 0, 0, 0,
+			 
 		 
 	}
 }
@@ -173,8 +174,10 @@
 @media (max-width: 1024px) {
  .address {
 	 width: 48%;
+	 
  }
 }
+
 
 /* Checkpoint: Виконане завдання (мобільний вигляд) */
 /* Checkpoint: Виконане завдання (десктопний вигляд) */

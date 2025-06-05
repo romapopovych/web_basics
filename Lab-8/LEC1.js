@@ -1,9 +1,9 @@
 // 1. Виведення змінних з їх типами
-var varString = "Hello, world!"; // Рядок
-var varNumber = 42; // Число
-var varArray = [1, 2, 3]; // Масив
-var varObject = { name: "Alice", age: 25 }; // Об'єкт
-var varFunction = function () { return "I'm a function!"; }; // Функція
+var varString = "Hello, world!"; // Рядок (string)
+var varNumber = 42; // Число (number)
+var varArray = [1, 2, 3]; // Масив (array, тип object)
+var varObject = { name: "Alice", age: 25 }; // Об'єкт (object)
+var varFunction = function () { return "I'm a function!"; }; // Функція 
 
 console.log("varString:", varString, typeof varString);
 console.log("varNumber:", varNumber, typeof varNumber);
@@ -19,22 +19,27 @@ console.log("Modified varString:", varString, typeof varString);
 console.log("Modified varNumber:", varNumber, typeof varNumber);
 
 // 3. Порівняння рядка і числа з "однаковими" значеннями
-console.log('"123" == 123:', "123" == 123); // true (нестроге порівняння)
-console.log('"123" === 123:', "123" === 123); // false (строге порівняння)
+var varString = "100"; // Рядок
+var varNumber = 100;   // Число
+
+
+console.log('"100" == 100:', varString == varNumber);   // true (нестроге порівняння)
+console.log('"100" === 100:', varString === varNumber); // false (строге порівняння)
+
 
 // 4. Просте шифрування / дешифрування числової інформації
-function encryptNumber(num, key = 5) {
-  return num + key; // Просте зміщення на key
-}
+let number = 10;
 
-function decryptNumber(encryptedNum, key = 5) {
-  return encryptedNum - key; // Відновлення оригінального числа
-}
+// Кодування числа в Base64
+let code = btoa(number.toString());
+console.log("Закодоване число Base64:", code);
 
-let originalNumber = 42;
-let encrypted = encryptNumber(originalNumber);
-let decrypted = decryptNumber(encrypted);
+// Декодування Base64 назад у число
+let decode = parseInt(atob(code), 10);
+console.log("Декодоване число:", decode);
 
-console.log("Original number:", originalNumber);
-console.log("Encrypted number:", encrypted);
-console.log("Decrypted number:", decrypted);
+
+
+
+
+
